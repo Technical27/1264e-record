@@ -7,4 +7,5 @@ void saveAuton (const char* filename) {
     doubles = std::move(loadedAuton[i]);
     fwrite(doubles.get(), sizeof(double), 4, file);
   }
+  fclose(file);
 }
